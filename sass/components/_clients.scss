@@ -1,0 +1,39 @@
+.client {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    &__list {
+            margin-right: 30px;
+        }
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+        height: 92px;
+        border: 1px solid rgba(175, 177, 184, 1);
+        border-radius: 4px;
+        transition: border $transition;
+
+        &:hover,
+        &:focus {
+               
+                cursor: pointer;
+                border-color: $color-accent;
+                outline: none;
+            }
+    }
+    &__icon {
+        width: 106px;
+        height: 60px;
+    
+        fill: #AFB1B8;
+        transition: fill $transition;
+    }
+    &__link:hover &__icon,
+    &__link:focus &__icon{
+            fill: $color-accent;
+            cursor: pointer;
+          }
+}

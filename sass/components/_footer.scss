@@ -1,0 +1,157 @@
+.footer {
+    background-color:$color-background;
+
+&__wrapper {
+        display: flex;
+        align-items: baseline;
+        padding-left: 0px;
+    }
+&__address-wrapper {
+      
+    margin-right: 70px;
+        }
+
+&__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+}
+.footer-adress {
+&__text,
+&__link-mail,
+&__link-tel {
+    display: block;
+    margin-bottom: 9px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    transition: color $transition;
+}
+
+&__text {
+    color: $color-primary;
+        cursor: pointer;
+        &:hover, &:focus {color: $color-accent;}
+    }
+&__link-tel{
+    margin-bottom: 0px;
+    &:hover,
+        &:focus {
+            color: $color-accent;
+        }
+}
+&__link-mail{
+    &:hover,
+        &:focus {
+            color: $color-accent;
+        }
+}
+}
+.footer-title {
+
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color:$color-primary;
+}
+
+.footer-contacts {
+    display: flex;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+
+&__link {
+            display: flex;
+            justify-content: center;
+            margin-right: 10px;
+            align-items: center;
+            border: none;
+            border-radius: 50%;
+            padding: 0px;
+            width: 44px;
+            height: 44px;
+    
+            background-color: rgba(255, 255, 255, 10%);
+            transition: background-color $transition;
+            &:hover,
+            &:focus {
+                    background-color: $color-accent;
+                    cursor: pointer;
+                    outline: none;
+                }
+        }
+&__icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    fill: $color-primary;
+    transition: fill $transition;
+}
+}
+.subscribe {
+    display: block;
+    padding-top: 72px;
+    padding-bottom: 94px;
+    margin-left: 93px;
+}
+
+.subscribe-form {
+
+    align-items: center;
+    justify-content: center;
+
+    &__field {
+            width: 350px;
+            font-size: 16px;
+            line-height: 1.25;
+            letter-spacing: inherit;
+            color: rgba(255, 255, 255, 0.6);
+            background-color: inherit;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            border-radius: 4px;
+            padding: 15px 16px;
+            margin-right: 12px;
+        }
+        &__button {
+            position: relative;
+            width: 200px;
+            height: 50px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.88;
+            letter-spacing: 0.06em;
+            color: $color-primary;
+            background-color: $color-accent;
+            cursor: pointer;
+            border: 0px;
+            box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+            border-radius: 4px;
+            padding: 10px 62px 10px 29px;
+            transition: background-color $color-accent;
+            &:focus,
+            &:hover {
+                    background-color: #188ce8;
+                }
+        }
+        &__icon {
+            position: absolute;
+            top: 50%;
+            right: 28px;
+            transform: translateY(-50%);
+        }
+}
+

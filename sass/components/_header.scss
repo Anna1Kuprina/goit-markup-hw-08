@@ -1,0 +1,132 @@
+.header {
+    border-bottom: 1px solid #ececec;
+}
+
+.nav,
+.contacts {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.nav {
+    position: relative;
+}
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    margin-left: 93px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    &__item+&__item {
+        margin-right: 50px;
+    }
+}
+.nav-list__link {
+    display: flex;
+    align-items: center;
+    color: $color-text;
+    text-decoration: none;
+    transition: color $transition;
+    &--current,
+    &:hover,
+    &:focus{
+        
+                color: $color-accent;
+            
+    }
+                
+}
+.nav-list__item {
+    position: relative;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    font-weight: 500;
+    font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+}
+
+.nav-list__item .nav-list__link--current::after {
+    content: " ";
+    position: absolute;
+    bottom: -32px;
+    left: 0px;
+    width: 100%;
+    height: 4px;
+
+    background: #2196F3;
+    border-radius: 2px;
+}
+
+
+
+
+
+
+.contacts {
+    margin-left: auto;
+   &__list{
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+&__items:hover{ 
+    color: $color-accent;
+
+}
+&__items+&__items {
+     margin-left: 50px;
+ }
+ 
+&__link-mail,
+&__link-tel {
+    color: #757575;
+    font-weight: 500;
+    letter-spacing: .02em;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color $transition;
+   &:hover,
+   &:focus{
+    color: $color-accent;
+   }
+}
+&__icon-envelope {
+    display: inline;
+    margin-right: 10px;
+    fill: rgba(117, 117, 117, 1);
+
+    width: 16px;
+    height: 12px;
+    transition: fill $transition;
+    
+}
+
+&__icon-smartphone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    display: inline;
+    fill: rgba(117, 117, 117, 1);
+    cursor: pointer;
+    transition: fill $transition;
+    
+}
+&__icon-envelope,
+&__icon-smartphone{
+    fill: currentColor;
+}
+   }
+
+
+

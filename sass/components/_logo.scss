@@ -1,0 +1,24 @@
+.logo {
+    display: flex;
+    justify-content: flex-start;
+
+    font-size: 26px;
+    font-family: $font-family;
+    font-weight: 700;
+    line-height: 1.19;
+    text-decoration: none;
+
+    &__item1 {
+            color:$color-accent;
+        }
+    &__item2 {
+            color:$color-black;
+        }
+   
+   &__item3 {
+               color:$color-primary;
+            }
+}
+
+
+
