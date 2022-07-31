@@ -1,15 +1,43 @@
 .header {
+    position: relative;
+   
     border-bottom: 1px solid #ececec;
-}
 
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+       
+    }
+}
+.contacts__wrap {
+    @media (max-width: 767px) {
+        display: flex;
+     
+    }
+
+    @media (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
 .nav,
 .contacts {
     display: flex;
-    align-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
+    max-height: 24px;
+            align-items: center;
+           
+    }
 
+
+.nav__container{
+    display: none;
+    @media screen and (min-width:768px){
+        display: flex;
+            
+            flex-grow: 1;
+    }
+}
 .nav {
     position: relative;
 }
@@ -58,7 +86,7 @@
 .nav-list__item .nav-list__link--current::after {
     content: " ";
     position: absolute;
-    bottom: -32px;
+    bottom: -24px;
     left: 0px;
     width: 100%;
     height: 4px;
@@ -75,26 +103,44 @@
 .contacts {
     margin-left: auto;
    &__list{
+    @media (min-width: 768px) {
+        flex-direction: column;
+    }
+    @media (min-width: 1200px) {
+        flex-direction: row;
+        align-items: center;
+        
+    }
     display: flex;
-    align-items: center;
-    margin: 0px;
-    padding: 0px;
+        margin: 0px;
+        padding: 0px;
 }
 &__items:hover{ 
     color: $color-accent;
 
 }
 &__items+&__items {
-     margin-left: 50px;
+    
+    @media  (min-width: 768px) {
+        margin: 0;
+    }
+         @media (min-width: 1200px) {
+             margin: 50px;
+         }
  }
  
 &__link-mail,
 &__link-tel {
+        font-size: 12px;
+            line-height: 1.17;
+            @media (min-width:1200px) {
+                font-size: 14px;
+            }
     color: #757575;
     font-weight: 500;
     letter-spacing: .02em;
     text-decoration: none;
-    font-size: 14px;
+   
     transition: color $transition;
    &:hover,
    &:focus{
