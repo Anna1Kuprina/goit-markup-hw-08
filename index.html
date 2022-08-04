@@ -18,24 +18,12 @@
   </head>
   <body>
     <header class="header">
+      <div class="container">
+      <nav class="nav">
        
-      <div class=" header__container container  ">
-         <a href="index.html" class="header__logo logo">
+        <a href="index.html" class="logo">
           <span class="logo__item1">Web</span><span class="logo__item2">Studio</span></a
         >
-        <button type="button" class="menu-button" 
-          aria-expanded="false"
-          aria-controls="menu-container"
-          data-menu-button>
-          <svg  class="button__icon" width="40" height="40"  aria-label="Переключатель мобильного меню">
-            <use class="icon-cross" href="./image/symbol-defs.svg#icon-close" ></use>
-            <use class="icon-menu" href="./image/symbol-defs.svg#icon-menu"></use>
-          </svg>
-        </button>
-       
-        <div class="menu-container" id="menu-container" data-menu>
-        
-      <nav class="nav">
         <ul class="nav-list" >
           <li class="nav-list__item">
             <a class="nav-list__link nav-list__link--current" href="index.html">Студия </a>
@@ -46,15 +34,15 @@
           <li class="nav-list__item">
             <a class="nav-list__link" href="#">Контакты </a>
           </li>
-        </ul>    
+        </ul>
+       
       </nav>
-        
       <nav class="contacts">
         <ul class="contacts__list">
           <li class="contacts__items"> 
               <a class="contacts__link-mail"
           href="mailto:info@devstudio.com">
-             <svg class="contacts__icon-envelope" width="16px" height="12px" >
+             <svg class="contacts__icon-envelope" >
             <use href="./image/symbol-defs.svg#icon-envelope">
             </use>       
           </svg>
@@ -62,30 +50,13 @@
       </li>
       <li class="contacts__items"> 
          <a class="contacts__link-tel"href="tel:+380961111111">        
-          <svg class="contacts__icon-smartphone" width="10px"  height="16px">
+          <svg class="contacts__icon-smartphone">
           <use href="./image/symbol-defs.svg#icon-smartphone"></use>
         </svg>      
           +38 096 111 11 11</a>
         </li>
      </ul>
-      <ul class="header-socials">
-        <li class="header-socials__item">
-          <a href="#" class="header-socials__link">Instagram</a>
-        </li>
-        <li class="header-socials__item">
-          <a href="#" class="header-socials__link">Twitter</a>
-        </li>
-        <li class="header-socials__item">
-          <a href="#" class="header-socials__link">Facebook</a>
-        </li>
-        <li class="header-socials__item">
-          <a href="#" class="header-socials__link">LinkedIn</a>
-        </li>
-      </ul>
        </nav>
-         
-       </div>
-      </div>
       </div>
     </header>
        <main>
@@ -535,6 +506,5 @@
     </div>
   </div>
       <script src="./JS/modal.js"></script>
-      <script src="./JS/mobile-menu.js"></script>
   </body>
 </html>
