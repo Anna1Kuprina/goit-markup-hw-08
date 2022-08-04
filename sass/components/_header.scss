@@ -50,6 +50,7 @@
         display: none;
     }
 }
+
 .button-menu .icon-close {
     display: none;
 }
@@ -64,7 +65,7 @@
 
 .menu-container {
     background-color: #fff;
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
      display: none;
     position: fixed;
     top: 0;
@@ -74,10 +75,19 @@
     z-index: 15;
     padding: 48px 5px 48px 40px;   
     }
-    @media (min-width:769px) {
+    
+&.is-open {
+ display: flex;}
+ flex-direction: column;
+ justify-content: space-between;
+ flex-grow: 1;
+
+ @media (min-width:768px) {
         display: flex;
             flex-grow: 1;
             justify-content: space-between;
+            justify-content: space-between;
+                align-items: center;
     }
     }
 
