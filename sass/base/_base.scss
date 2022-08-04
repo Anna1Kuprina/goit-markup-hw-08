@@ -3,7 +3,7 @@
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    display: flex;
+    // display: flex;
     
         align-items: center;
         flex-wrap: wrap;
@@ -49,4 +49,9 @@
      line-height: 1.16;
      text-align: center;
      letter-spacing: 0.03em;
+ }
+ .section .section__explanation{
+    @media screen and (max-width: 1199px) {
+            display: none;
+        }
  }

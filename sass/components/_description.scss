@@ -1,8 +1,11 @@
 .section__explanation {
     padding-top: 0px;
+    @media screen and (max-width: 1199px) {
+            display: none;
+        }
 }
 .description {
-    display: flex;
+    // display: flex;
     margin: 0px;
     padding-left: 0px;
 
@@ -20,7 +23,7 @@
     position:absolute;
  bottom: 0px;
  width: 100%;
- display: flex;
+//  display: flex;
  align-items: center;
  justify-content: center;
  background-color:rgba(47, 48, 58, 0.8);
