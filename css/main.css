@@ -388,8 +388,8 @@ ul {
   margin-bottom: 30px;
   color: #FFFFFF;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 42px;
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
@@ -420,6 +420,9 @@ ul {
   margin-right: 0px;
 }
 .properties__wrapper-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -550,6 +553,9 @@ ul {
 }
 
 .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -561,6 +567,9 @@ ul {
   margin-right: 10px;
 }
 .social__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -593,13 +602,19 @@ ul {
 }
 
 .client {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0;
   padding: 0;
-}
-.client__list {
-  margin-right: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
 }
 .client__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -634,10 +649,12 @@ ul {
   background-color: #2F303A;
 }
 .footer__wrapper {
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  padding-left: 0px;
+  max-width: 480px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer__address-wrapper {
   display: block;
@@ -681,6 +698,10 @@ ul {
   color: #2196F3;
 }
 
+.contacts-wrapper {
+  margin-top: 60px;
+}
+
 .footer-title {
   font-style: normal;
   font-weight: 700;
@@ -692,11 +713,21 @@ ul {
 }
 
 .footer-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0px;
   padding: 0px;
+  margin-bottom: 60px;
 }
 .footer-contacts__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -729,21 +760,11 @@ ul {
 
 .subscribe {
   display: block;
-  padding-top: 72px;
-  padding-bottom: 94px;
-  margin-left: 93px;
 }
 
-.subscribe-form {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
 .subscribe-form__field {
-  width: 350px;
+  margin-bottom: 20px;
+  width: 100%;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: inherit;

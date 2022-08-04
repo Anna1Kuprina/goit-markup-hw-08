@@ -1,13 +1,17 @@
 .client {
-    // display: flex;
+    display: flex;
     margin: 0;
     padding: 0;
-
-    &__list {
-            margin-right: 30px;
-        }
+    flex-wrap: wrap;
+        gap: 30px;
+    
+    // &__list {
+    //         margin-right: 30px;
+            
+    //     }
     &__link {
-        // display: flex;
+        display: flex;
+
         justify-content: center;
         align-items: center;
         width: 170px;
